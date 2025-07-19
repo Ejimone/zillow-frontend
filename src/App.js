@@ -1,12 +1,9 @@
-import Nav from "./components/nav";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Nav />
-        <h1>Welcome to Zillow Frontend</h1>
-      </header>
+      <Home />
     </div>
   );
 }
