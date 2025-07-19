@@ -1,8 +1,9 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import heroImage from "../images/heroImage.png";
 import recomdedImage from "../images/recomendations-image.webp";
 import "../Styles/HeroSection.css";
 import "../Styles/HomeListings.css";
+import "../Styles/BuySellRent.css";
 
 const HeroSection = () => {
   const scrollContainerRef = useRef(null);
@@ -18,6 +19,38 @@ const HeroSection = () => {
         <div className="search-bar">
           <input type="text" placeholder="Enter an address, neighborhood, city, or ZIP code" />
           <button>Search</button>
+        </div>
+      </section>
+
+      <section className="buy-sell-rent-section">
+        <div className="buy-sell-rent-container">
+          {/* Buy a home card */}
+          <div className="card">
+            <div className="card-image">
+              <img src="https://via.placeholder.com/150" alt="Buy a home illustration" />
+            </div>
+            <h3>Buy a home</h3>
+            <p>Find your place with an immersive photo experience and the most listings, including things you won't find anywhere else.</p>
+            <a href="#browse-homes" className="btn-outlined">Browse homes</a>
+          </div>
+          {/* Sell a home card */}
+          <div className="card">
+            <div className="card-image">
+              <img src="https://via.placeholder.com/150" alt="Sell a home illustration" />
+            </div>
+            <h3>Sell a home</h3>
+            <p>No matter what path you take to sell your home, we can help you navigate a successful sale.</p>
+            <a href="#see-options" className="btn-outlined">See your options</a>
+          </div>
+          {/* Rent a home card */}
+          <div className="card">
+            <div className="card-image">
+              <img src="https://via.placeholder.com/150" alt="Rent a home illustration" />
+            </div>
+            <h3>Rent a home</h3>
+            <p>We're creating a seamless online experience - from shopping on the largest rental network, to applying, to paying rent.</p>
+            <a href="#find-rentals" className="btn-outlined">Find rentals</a>
+          </div>
         </div>
       </section>
 
@@ -130,15 +163,6 @@ const HeroSection = () => {
           </button>
         </div>
       </section>
-
-
-
-
-      <div className="buySellRent">
-        <a href="/buy">Buy</a>
-        <a href="/sell">Sell</a>
-        <a href="/rent">Rent</a>
-      </div>
     </div>
   );
 };
