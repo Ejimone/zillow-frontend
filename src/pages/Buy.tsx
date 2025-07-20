@@ -1,7 +1,10 @@
+import Nav from "../components/nav"
 
 const Buy = () => {
   return (
-    <div>Buy</div>
+    <div>
+        <Nav />
+    </div>
   )
 }
 
