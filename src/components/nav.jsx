@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import "../Styles/nav.css";
 
@@ -29,17 +30,17 @@ const Nav = () => {
 
       {!isMobile && (
         <div className="nav-left nav-links">
-          <a href="#buy">Buy</a>
-          <a href="#rent">Rent</a>
-          <a href="#sell">Sell</a>
-          <a href="#mortgage">Get a Mortgage</a>
+          <Link to="/buy">Buy</Link>
+          <Link to="/rent">Rent</Link>
+          <Link to="/sell">Sell</Link>
+          <Link to="/mortgage">Get a Mortgage</Link>
         </div>
       )}
 
       <div className="nav-center">
-        <a href="#home">
+        <Link to="/">
           <img src={logo} alt="Company Logo" className="nav-logo" />
-        </a>
+        </Link>
       </div>
 
       {!isMobile && (
@@ -66,10 +67,10 @@ const Nav = () => {
 
       {isMenuOpen && (
         <div className="mobile-nav-links open">
-          <a href="#buy">Buy</a>
-          <a href="#rent">Rent</a>
-          <a href="#sell">Sell</a>
-          <a href="#mortgage">Get a Mortgage</a>
+          <Link to="/buy">Buy</Link>
+          <Link to="/rent">Rent</Link>
+          <Link to="/sell">Sell</Link>
+          <Link to="/mortgage">Get a Mortgage</Link>
           <a href="#agent">Find an Agent</a>
           <a href="#rentals">Manage Rentals</a>
           <a href="#advertise">Advertise</a>
