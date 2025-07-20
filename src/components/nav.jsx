@@ -46,10 +46,10 @@ const Nav = () => {
       {!isMobile && (
         <div className="nav-right">
           <div className="nav-links">
-            <a href="#agent">Find an Agent</a>
-            <a href="#rentals">Manage Rentals</a>
-            <a href="#advertise">Advertise</a>
-            <a href="#help">Help</a>
+            <Link to="/find-agent">Find an Agent</Link>
+            <Link to="/manage-rentals">Manage Rentals</Link>
+            <Link to="/advertise">Advertise</Link>
+            <Link to="/help">Help</Link>
           </div>
           <a href="#signin" className="nav-signin">
             Sign In
@@ -71,10 +71,10 @@ const Nav = () => {
           <Link to="/rent">Rent</Link>
           <Link to="/sell">Sell</Link>
           <Link to="/mortgage">Get a Mortgage</Link>
-          <a href="#agent">Find an Agent</a>
-          <a href="#rentals">Manage Rentals</a>
-          <a href="#advertise">Advertise</a>
-          <a href="#help">Help</a>
+          <Link to="/find-agent">Find an Agent</Link>
+          <Link to="/manage-rentals">Manage Rentals</Link>
+          <Link to="/advertise">Advertise</Link>
+          <Link to="/help">Help</Link>
           <a href="#signin">Sign In</a>
         </div>
       )}
